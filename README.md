@@ -6,7 +6,6 @@ Notifier is the main class in the notification mechanism. It stores Notifiable o
 
 Usage: Normally this class would only be instantiated once, by some top level controlling class.  However any number of Notifiers can be instantiated.  Once created the embedded thread begins its run ( ) method, waiting for Notifications to be posted.
 
- *	...
  *
  *	// start the thread and wait for notifications. <p>
  *	Notifier notifier = new Notifier ( );
