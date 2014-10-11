@@ -1,5 +1,7 @@
 JwareRemoteMessagingService
 ===========================
+This is an old, 1997-98, library for sending and receiving messages via internet. I made up a Chat client/server for a test program.  Here's how it works. 
+
 Notifier is the main class in the notification mechanism. It stores Notifiable objects in a Vector and any Notifications in a (FIFO) Queue.Any posted notifications will be sent to all registeredNotifiable objects ReceiveNotify ( ) method, multi-thread safe. This will continue until the queue is empty. All posted messages are dequeued and sent only once. Since the class uses a thread to access its internal notification mechanism, all methods are synchronized. Further, Notifier uses Java's full set of thread safety mechanisms and makes every attempt to prevent starvation or deadlock.
 
 Usage: Normally this class would only be instantiated once, by some top level controlling class.  However any number of Notifiers can be instantiated.  Once created the embedded thread begins its run ( ) method, waiting for Notifications to be posted.
