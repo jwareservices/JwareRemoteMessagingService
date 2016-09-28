@@ -25,7 +25,7 @@ import org.jware.util.Queue;
  *
  * @author J. Paul Jackson <jwareservices@gmail.com>
  * 
- * @version 1.2 July. 4, 1998
+ * @version 1.2 July. 4, 1998, touched 2014.
  */
 
 /**
